@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#mobile-lang-dropdown {
+  z-index: 50; /* Dropdown boshqa elementlardan ustun bo'lishi kerak */
+}
+
+.swiper {
+  width: 60px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

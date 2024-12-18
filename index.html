@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center py-4">
+          <div class="flex items-center">
+            <img src="./img/logo2.png" alt="Logo" class="h-10 w-auto" />
+          </div>
+          <button
+            id="menu-toggle"
+            class="block md:hidden text-gray-700 hover:text-gray-900 focus:outline-none"
+            aria-label="Toggle Menu"
+          >
+            &#9776;
+          </button>
+          <nav class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition"
+              >О нас</a
+            >
+            <a
+              href="./solution.html"
+              class="text-gray-600 hover:text-gray-900 transition"
+              >Решения</a
+            >
+            <a
+              href="./expertise.html"
+              class="text-gray-600 hover:text-gray-900 transition"
+              >Экспертиза</a
+            >
+            <a
+              href="./contact.html"
+              class="text-gray-600 hover:text-gray-900 transition"
+              >Контакт</a
+            >
+
+            <div class="relative">
+              <button
+                id="lang-toggle"
+                class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
+              >
+                Язык
+              </button>
+              <ul
+                id="lang-dropdown"
+                class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-50"
+              >
+                <li>
+                  <a
+                    href="#"
+                    data-lang="en"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-lang="ru"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >Русский</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-lang="uz"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >O'zbek</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <a href="#" class="text-gray-600 hover:text-gray-900 transition">
+              <img src="./img/search.png" alt="Search" class="h-6 w-6" />
+            </a>
+          </nav>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+          <nav class="space-y-4">
+            <a href="#" class="block text-gray-600 hover:text-gray-900"
+              >О нас</a
+            >
+            <a
+              href="./solution.html"
+              class="block text-gray-600 hover:text-gray-900"
+              >Решения</a
+            >
+            <a
+              href="./expertise.html"
+              class="block text-gray-600 hover:text-gray-900"
+              >Экспертиза</a
+            >
+            <a
+              href="./contact.html"
+              class="block text-gray-600 hover:text-gray-900"
+              >Контакт</a
+            >
+
+            <div class="relative">
+              <button
+                id="mobile-lang-toggle"
+                class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
+              >
+                Язык
+              </button>
+              <ul
+                id="mobile-lang-dropdown"
+                class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-10"
+              >
+                <li>
+                  <a
+                    href="#"
+                    data-lang="en"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-lang="ru"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >Русский</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-lang="uz"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                    >O'zbek</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="relative bg-gray-100">
+      <div class="relative">
+        <img
+          src="./img/hero.png"
+          alt="Hero Background"
+          class="w-full h-[92vh] object-cover"
+        />
+        <div
+          class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-40"
+        >
+          <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
+            Делая сложное простым, мы создаем ваш успех
+          </h1>
+          <button
+            class="mt-4 bg-[#383434] text-white font-medium px-6 py-[2px] rounded shadow box-border border-2 border-white/[0.5]"
+          >
+            Обратиться
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="swiper h-[90vh]">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide flex flex-col lg:flex-row-reverse items-center justify-center gap-2">
+          <div class="w-full lg:w-1/2">
+            <img src="./img/home_hero.png" alt="Slide 1 Image" class="w-full h-auto lg:h-[70vh] object-cover">
+          </div>
+          
+          <div class="p-4 lg:px-6 lg:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 text-[#47546e]">Трудности заказчиков (госорганизаций и крупных компаний)</h2>
+            <p class="text-gray-700 mb-2">2. Недостаточная стабильность базы поставщиков</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Отсутствие инструментов для регулирования круга поставщиков и проблемы с подготовкой закупочной документации.</li>
+              <li>Затраты ресурсов на согласование и привлечение новых участников.</li>
+              <li>Отсутствие инструментов и кадров для внедрения категорийного менеджмента и современных методов управления.</li>
+              <li>Сложность анализа предложений из-за слабой автоматизации.</li>
+              <li>Низкий уровень инструментария для планирования и аналитики сказывается на сотрудниках.</li>
+              <li>Ручные процессы замедляют принятие решений.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="swiper-slide flex flex-col lg:flex-row-reverse items-center gap-4 justify-center">
+         <div class="w-full lg:w-1/2">
+          <img src="./img/swiper.png" alt="Slide 2 Image" class="w-full h-auto lg:h-[70vh] object-cover">
+         </div>
+          <div class="p-4 lg:px-6 lg:w-1/2">
+            <h2 class="text-2xl font-bold mb-4 text-[#47546e]">Трудности поставщиков (участников госзакупок)</h2>
+            <p class="text-gray-700 mb-2">1. Высокий барьер для участия</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Сложные требования к документам, которые трудно выполнить без опыта участия.</li>
+              <li>Незнание скрытых требований и критериев приводит к отклонению заявок.</li>
+            </ul>
+            <p class="text-gray-700 mb-2">2. Неэффективное планирование</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Отсутствие стратегии участия в тендерах.</li>
+              <li>Недостаточная подготовка и анализ по конкурентам при формировании предложений.</li>
+            </ul>
+            <p class="text-gray-700 mb-2">3. Риски и потери</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Участие в тендерах без анализа рисков может привести к убыткам.</li>
+              <li>Неправильное ценообразование уменьшает маржу.</li>
+            </ul>
+            <p class="text-gray-700 mb-2">4. Отсутствие долгосрочного планирования</p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Упор на разовые сделки вместо выстраивания устойчивого бизнеса с госзаказчиками.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper Controls -->
+      <div class="mt-4 flex justify-between items-center">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev hover:text-gray-600"></div>
+        <div class="swiper-button-next hover:text-gray-600"></div>
+      </div>
+  </section>
+
+    <section class="mt-8">
+      <div
+        class="max-w-5xl mx-auto px-1 py-4 text-start text-lg font-medium text-gray-700 mb-6"
+      >
+        Globbid Consulting — это команда экспертов, которая помогает бизнесу
+        расти, оптимизировать процессы и достигать новых высот. Мы
+        специализируемся на улучшении закупочных процедур, стратегическом
+        управлении и развитии продаж через B2G (Business-to-Government).
+      </div>
+
+      <div class="relative mb-8">
+        <img
+          src="./img/ship.png"
+          alt="Globbid Consulting"
+          class="w-screen h-[60vh] object-cover"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold bg-black bg-opacity-50"
+        >
+          <!-- Your text goes here -->
+          <span>Globbid Consulting — «Объединяя возможности и рынки»</span>
+        </div>
+      </div>
+
+      <div class="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="card bg-white shadow-md rounded-md p-6">
+          <h2 class="text-xl font-semibold text-[#47546e] mb-4">Наша миссия</h2>
+          <p class="text-gray-600">
+            Мы создаем решения, которые позволяют бизнесу уверенно участвовать в
+            госзакупках, минимизировать риски и добиваться устойчивого роста.
+            Наша цель — стать вашим надежным партнером на пути к успеху,
+            предлагая прозрачные и эффективные стратегии.
+          </p>
+        </div>
+
+        <div class="card bg-white shadow-md rounded-md p-6">
+          <h2 class="text-xl font-semibold text-[#47546e] mb-4">Наша команда</h2>
+          <p class="text-gray-600">
+            Наши эксперты обладают более чем 15–20 годами опыта в таких ключевых
+            отраслях, как:
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Машиностроение и горнодобывающая промышленность.</li>
+            <li>Ретейл, дистрибуция и финансы.</li>
+            <li>Государственные закупки и управление проектами.</li>
+          </ul>
+        </div>
+
+        <div class="card bg-white shadow-md rounded-md p-6">
+          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+            Наши ценности
+          </h2>
+          <ul class="list-none text-gray-600">
+            <li>
+              <strong class="text-gray-500">1. Результативность:</strong> Мы ориентируемся на
+              конкретные измеримые результаты, которые приносят пользу клиентам.
+            </li>
+            <li>
+              <strong class="text-gray-500">2. Прозрачность:</strong> Полное доверие между клиентами и
+              нашей командой — основа успеха. Мы гарантируем конфиденциальность
+              и честность.
+            </li>
+            <li>
+              <strong class="text-gray-500">3. Индивидуальный подход:</strong> Каждый клиент для нас
+              уникален. Мы разрабатываем решения, которые учитывают специфику
+              вашего бизнеса.
+            </li>
+            <li>
+              <strong class="text-gray-500">4. Ответственность за успех:</strong> Мы готовы взять на
+              себя ответственность за реализацию проектов, помогая вашему
+              бизнесу расти и процветать.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card bg-white shadow-md rounded-md p-6">
+          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+            Чем мы отличаемся?
+          </h2>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>
+              Практический опыт: многолетняя работа в реальном секторе позволяет
+              предлагать проверенные и надежные решения.
+            </li>
+            <li>
+              Комплексный подход: работа на всех этапах — от анализа текущей
+              ситуации до внедрения новых процессов.
+            </li>
+            <li>
+              Уникальные решения: стратегии, которые работают в долгосрочной
+              перспективе, избегая шаблонных подходов.
+            </li>
+          </ul>
+        </div>
+
+        <div class="card bg-white shadow-md rounded-md p-6">
+          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+            Почему выбирают Globbid Consulting?
+          </h2>
+          <p class="text-gray-600">
+            Мы помогаем клиентам ориентироваться в сложном мире госзакупок и
+            коммерческой деятельности, упрощая сложные процессы и превращая их в
+            источник роста. С Globbid Consulting вы получаете:
+          </p>
+          <ul class="list-disc list-inside text-gray-600">
+            <li>Глубокую экспертизу.</li>
+            <li>Лидерские решения.</li>
+            <li>Партнера, который ставит ваши интересы на первое место.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="min-h-screen flex flex-col md:flex-row my-2">
+      <div class="w-full md:w-1/2 lg:w-1/2 relative">
+        <img
+          src="./img/image.png"
+          alt="Globbid Consulting"
+          class="w-full h-auto md:h-full object-cover"
+          style="object-position: right"
+        />
+      </div>
+
+      <div class="w-full md:w-1/2 lg:w-1/2 p-6 md:p-2 lg:p-4">
+        <div class="space-y-2">
+          <div class="bg-white shadow-md rounded-lg p-6">
+            <h2 class="text-2xl font-bold text-[#47546e] mb-4">Наша миссия</h2>
+            <p class="text-gray-700 leading-relaxed">
+              Мы создаем решения, которые позволяют бизнесу уверенно участвовать
+              в госзакупках, минимизировать риски и добиваться устойчивого
+              роста. Наша цель — стать вашим надежным партнером на пути к
+              успеху, предлагая прозрачные и эффективные стратегии.
+            </p>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg px-4 py-2">
+            <h2 class="text-2xl font-bold text-[#47546e] mb-4">Наша команда</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+              <li>
+                Наши эксперты обладают более чем 15–20 годами опыта в таких
+                ключевых отраслях, как:
+              </li>
+              <li>Машиностроение и горнодобывающая промышленность</li>
+              <li>Ретейл, дистрибуция и финансы</li>
+              <li>Государственные закупки и управление проектами</li>
+            </ul>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg px-4 py-2">
+            <h2 class="text-2xl font-bold text-[#47546e] mb-4">Наши ценности</h2>
+            <div class="space-y-2 text-gray-700">
+              <div>
+                <h3 class="font-semibold text-lg text-gray-500">
+                  1. Результативность
+                </h3>
+                <p>
+                  Мы ориентируемся на конкретные измеримые результаты, которые
+                  приносят пользу клиентам.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-gray-500">
+                  2. Прозрачность
+                </h3>
+                <p>
+                  Полное доверие между клиентами и нашей командой — основа
+                  успеха. Мы гарантируем конфиденциальность и честность.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-gray-500">
+                  3. Индивидуальный подход
+                </h3>
+                <p>
+                  Каждый клиент для нас уникален. Мы разрабатываем решения,
+                  которые учитывают специфику вашего бизнеса.
+                </p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg text-gray-500">
+                  4. Ответственность за успех
+                </h3>
+                <p>
+                  Мы готовы взять на себя ответственность за реализацию
+                  проектов, помогая вашему бизнесу расти и процветать.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg px-4 py-2">
+            <h2 class="text-2xl font-bold text-[#47546e] mb-4">
+              Чем мы отличаемся?
+            </h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+              <li>
+                Практический опыт: За нашей командой стоит многолетняя работа в
+                реальном секторе, что позволяет нам предлагать проверенные и
+                надежные решения.
+              </li>
+              <li>
+                Комплексный подход: Мы работаем с клиентом на всех этапах — от
+                анализа текущей ситуации до внедрения новых процессов.
+              </li>
+              <li>
+                Уникальные решения: Мы создаем стратегии и планы, которые
+                работают в долгосрочной перспективе, избегая стандартных
+                шаблонов.
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-white shadow-md rounded-lg px-4 py-2">
+            <h2 class="text-2xl font-bold text-[#47546e] mb-4">
+              Почему выбирают Globbid Consulting?
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Мы помогаем клиентам ориентироваться в сложном мире госзакупок и
+              коммерческой деятельности, упрощая сложные процессы и превращая их
+              в источник роста. С Globbid Consulting вы получаете:
+            </p>
+            <ul class="list-disc list-inside text-gray-700 space-y-2">
+              <li>Глубокую экспертизу</li>
+              <li>Лидерские решения</li>
+              <li>Партнера, который ставит ваши интересы на первое место</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#323232] h-auto p-6 flex justify-center items-center">
+      <div class="cta_1">
+        <p class="text-white text-2xl font-normal">
+          Если вы хотите получить консультацию напишите нам и мы с Вам свяжемся
+        </p>
+      </div>
+    </section>
+    <footer class="bg-[#1e1e1e] py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center gap-3">
+          <ul class="flex flex-wrap space-x-6 mb-6 md:mb-0">
+            <li>
+              <a href="#" class="text-white text-base font-normal">Insights</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-base font-normal">Media</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-base font-normal">Alumni</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-base font-normal">Careers</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-base font-normal">Locations</a>
+            </li>
+            <li>
+              <a href="#" class="text-white text-base font-normal">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="flex space-x-6 mb-6 md:mb-0">
+            <li>
+              <img src="./img/LinkedIn-3x.png" alt="LinkedIn" class="w-6" />
+            </li>
+          </ul>
+
+          <ul class="flex flex-wrap space-x-6 mb-6 md:mb-0">
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal">Site map</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal"
+                >Privacy policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal"
+                >Legal disclaimer</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal"
+                >Client confidentiality</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal"
+                >Cookie notice</a
+              >
+            </li>
+          </ul>
+
+          <ul class="flex flex-wrap space-x-6">
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal"
+                >Responsible AI use</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-400 text-xs font-normal"
+                >Do not sell or share my personal information</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-center mt-6">
+          <span class="text-gray-400 text-lg">GLOBBID CONSULTING</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".swiper", {
+          direction: "horizontal",
+          loop: true,
+          cssMode: true, // Use browser-native scrolling
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

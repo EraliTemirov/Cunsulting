@@ -1,0 +1,11 @@
+{
+   "name": "globbid_cunsulting",
+   "version": "1.0.0",
+   "description": "Consulting",
+   "main": "index.js",
+   "scripts": {
+     "compile:sass": "sass sass/main.scss css/style.css -w"
+   },
+   "author": "Jamshid",
+   "license": "ISC"
+ }

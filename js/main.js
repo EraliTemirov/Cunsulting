@@ -53,22 +53,29 @@ mobileLangItems.forEach((item) => {
 });
 
 
-const head = document.head;
-const newMeta = document.createElement("meta");
-newMeta.name = "keywords";
-newMeta.id = `meta-${lang}`;
+function setLanguageMetadata(lang) {
+  const keywordsMap = {
+    'en': 'Public procurement consulting, B2G sales optimization, Tender participation strategy, Government contract support, Procurement process improvement',
+    'ru': 'Госзакупки оптимизация, Услуги B2G, Участие в тендерах, Консалтинговые услуги для госзакупок, Анализ тендерных предложений, Оптимизация закупочных процедур',
+    'uz': 'Davlat xaridlari optimizatsiyasi, B2G bozoriga kirish, Tenderda ishtirok etish, Konsalting xizmatlari davlat uchun, Xaridlarni tahlil qilish'
+  };
 
-if (lang === "en") {
-  newMeta.content =
-    "Public procurement consulting, B2G sales optimization, Tender participation strategy, Government contract support, Procurement process improvement";
-} else if (lang === "ru") {
-  newMeta.content =
-    "Госзакупки оптимизация, Услуги B2G, Участие в тендерах, Консалтинговые услуги для госзакупок, Анализ тендерных предложений, Оптимизация закупочных процедур";
-} else if (lang === "uz") {
-  newMeta.content =
-    "Davlat xaridlari optimizatsiyasi, B2G bozoriga kirish, Tenderda ishtirok etish, Konsalting xizmatlari davlat uchun, Xaridlarni tahlil qilish";
+  if (!keywordsMap.hasOwnProperty(lang)) {
+    console.error(`Неподдерживаемый язык: ${lang}`);
+    return;
+  }
+
+  const existingMeta = document.head.querySelector(`meta[id="meta-${lang}"]`);
+  if (existingMeta) {
+    existingMeta.remove();
+  }
+
+  const newMeta = document.createElement("meta");
+  newMeta.name = "keywords";
+  newMeta.id = `meta-${lang}`;
+  newMeta.content = keywordsMap[lang];
+
+  document.head.appendChild(newMeta);
+
+  document.documentElement.setAttribute("lang", lang);
 }
-
-head.appendChild(newMeta);
-
-document.documentElement.setAttribute("lang", lang);

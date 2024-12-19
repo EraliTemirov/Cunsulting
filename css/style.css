@@ -13,4 +13,11 @@
   height: 30px;
 }
 
+.oswald {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /*# sourceMappingURL=style.css.map */

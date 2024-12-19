@@ -377,41 +377,29 @@
     </section>
     <section class="max-w-7xl m-auto my-4">
       <div class="flex flex-col lg:flex-row my-2 gap-4">
-        <div class="bg-white shadow-md rounded-lg px-4 py-2">
-            <h2 class="text-2xl font-bold text-[#47546e] mb-4">
-              Чем мы отличаемся?
+        <div class="bg-white shadow-sm rounded-lg px-4 py-2">
+            <h2 class="text-xl font-bold text-[#47546e] mb-4">
+              Globbid Consulting — это ваш внешний штат высококвалифицированных специалистов, готовый решить все перечисленные трудности как для заказчиков, так и для поставщиков.
             </h2>
+          </div>
+      </div>
+      <div class="flex flex-col lg:flex-row my-2 gap-4">
+        <div class="bg-white shadow-md rounded-lg px-4 py-2">
+            <p class="text-xl font-bold text-[#47546e] mb-4">Мы помогаем заказчикам:</p>
             <ul class="list-disc list-inside text-gray-700 space-y-3">
-              <li>
-                Практический опыт: За нашей командой стоит многолетняя работа в
-                реальном секторе, что позволяет нам предлагать проверенные и
-                надежные решения.
-              </li>
-              <li>
-                Комплексный подход: Мы работаем с клиентом на всех этапах — от
-                анализа текущей ситуации до внедрения новых процессов.
-              </li>
-              <li>
-                Уникальные решения: Мы создаем стратегии и планы, которые
-                работают в долгосрочной перспективе, избегая стандартных
-                шаблонов.
-              </li>
+              <li>Внедрить прозрачные и эффективные закупочные процессы.</li>
+              <li> Разработать стратегии категорийного менеджмента.</li>
+              <li>Оптимизировать расходы и соответствовать законодательным требованиям.</li>
+              <li>Автоматизировать управление закупками для снижения человеческого фактора.</li>
             </ul>
           </div>
-
           <div class="bg-white shadow-md rounded-lg px-4 py-2">
-            <h2 class="text-2xl font-bold text-[#47546e] mb-4">
-              Почему выбирают Globbid Consulting?
-            </h2>
-            <p class="text-gray-700 mb-4">
-              Мы помогаем клиентам ориентироваться в сложном мире госзакупок и
-              коммерческой деятельности, упрощая сложные процессы и превращая их
-              в источник роста. С Globbid Consulting вы получаете:
-            </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-2">
-              <li>Глубокую экспертизу</li>
-              <li>Лидерские решения</li>
-              <li>Партнера, который ставит ваши интересы на первое место</li>
+            <p class="text-xl font-bold text-[#47546e] mb-4">Мы помогаем поставщикам:</p>
+            <ul class="list-disc list-inside text-gray-700 space-y-3">
+              <li>Подготовиться к тендерам, минимизировать ошибки и увеличить шансы на победу.</li>
+              <li>Разработать стратегии долгосрочного сотрудничества с государственными заказчиками.</li>
+              <li>Предоставить юридическую, аналитическую и маркетинговую поддержку.</li>
+              <li>Снизить риски и добиться роста через эффективное участие в госзакупках.</li>
             </ul>
           </div>
       </div>
@@ -575,28 +563,29 @@
 
     // Phone number formatting
     document.getElementById('phone_number').addEventListener('input', function(e) {
-        let input = e.target.value.replace(/\D/g, '').substring(0, 12);
-        let formatted = '';
-        
-        if (input.length > 0) {
-            formatted += '+998 ';
-            formatted += input.substring(0, 2);
-            
-            if (input.length > 2) {
-                formatted += ' ' + input.substring(2, 5);
-            }
-            
-            if (input.length > 5) {
-                formatted += ' ' + input.substring(5, 7);
-            }
-            
-            if (input.length > 7) {
-                formatted += ' ' + input.substring(7, 9);
-            }
-        }
-        
-        e.target.value = formatted;
-    });
+    let input = e.target.value.replace(/\D/g, '').substring(0, 12); // Faqat raqamlarni olish va 12 ta raqam bilan cheklash
+
+    // Formatlash logikasi: masalan, +998 (90) 123-45-67 shaklida
+    let formatted = '';
+
+    if (input.length > 0) {
+        formatted += '+998 ';
+    }
+    if (input.length > 3) {
+        formatted += '(' + input.substring(3, 5) + ') ';
+    }
+    if (input.length > 5) {
+        formatted += input.substring(5, 8) + '-';
+    }
+    if (input.length > 8) {
+        formatted += input.substring(8, 10) + '-';
+    }
+    if (input.length > 10) {
+        formatted += input.substring(10, 12);
+    }
+
+    e.target.value = formatted;
+});
 
     // Close modal functionality
     document.getElementById('closeModalBtn').addEventListener('click', function() {

@@ -13,3 +13,11 @@
 .bebas-neue-regular{
    font-family: 'GillSansMTCondensed', sans-serif;
 }
+
+@media (min-width: 768px) {
+   .last-card {
+     grid-column: span 2; /* 2 ta ustunni qamrab oladi */
+     justify-self: center; /* o'rta bo'lishi uchun */
+   }
+ }
+ 

@@ -27,7 +27,7 @@
   </head>
   <body>
     <header class="bg-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
             <a href="./index.html" class="flex gap-3 items-center">
@@ -38,6 +38,7 @@
                 GLOBBID CONSULTING
               </span>
             </a>
+            
           </div>
           <button
             id="menu-toggle"
@@ -47,87 +48,89 @@
             &#9776;
           </button>
           <nav class="hidden md:flex items-center space-x-6">
-            <a href="#" class="text-gray-600 font-bold hover:text-gray-900 transition"
+            <a
+              href="#"
+              class="font-semibold transition"
               >О нас</a
             >
             <a
               href="./solution.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Решения</a
             >
             <a
               href="./expertise.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Экспертиза</a
             >
             <a
               href="./contact.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Контакт</a
             >
 
             <div class="relative">
               <button
                 id="lang-toggle"
-                class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
+                class="transition focus:outline-none"
               >
-                Язык
+              RU
               </button>
               <ul
                 id="lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-50"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
 
             <a href="#" class="text-gray-600 hover:text-gray-900 transition">
-              <img src="./img/search.png" alt="Search" class="h-6 w-6" />
+              <img src="./img/search.png" alt="Search" class="h-5 w-5" />
             </a>
           </nav>
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden">
           <nav class="space-y-4">
-            <a href="#" class="block text-gray-600 font-bold hover:text-gray-900"
+            <a href="#" class="font-semibold block"
               >О нас</a
             >
             <a
               href="./solution.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Решения</a
             >
             <a
               href="./expertise.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Экспертиза</a
             >
             <a
               href="./contact.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Контакт</a
             >
 
@@ -136,52 +139,55 @@
                 id="mobile-lang-toggle"
                 class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
               >
-                Язык
+                Ru
               </button>
               <ul
                 id="mobile-lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-10"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
     </header>
+
     <section class="mt-8">
       <div
-      class="max-w-5xl mx-auto px-1 py-4 text-start text-lg font-medium text-gray-700 my-12"
-      style="text-align: justify; text-justify: inter-word;"
+      class="max-w-5xl mx-auto px-2 py-4 "     
     >
-      <span class="pl-5 text-xl">Globbid</span> Consulting — это команда экспертов,
+    <h1 class="text-[#1e1e1e] font-bold text-[36px] md:text-[46px] lg:text-[60px]">О нас</h1>
+      <p class="w-full md:w-[60%] text-start text-xl font-light  text-[#1e1e1e]  my-10" style="text-align: justify; text-justify: inter-word;">
+      Globbid Consulting — это команда экспертов,
       которая помогает бизнесу расти, оптимизировать процессы и достигать
       новых высот. Мы специализируемся на улучшении закупочных процедур,
       стратегическом управлении и развитии продаж через B2G
       (Business-to-Government).
+      </p>
     </div>
     
     
@@ -195,14 +201,14 @@
         <div
           class="absolute inset-0 flex items-center justify-center text-white font-bold bg-black bg-opacity-50"
         >
-          <span class="text-2xl  lg:text-4xl">Globbid Consulting — «Объединяя возможности и рынки»</span>
+          <span class="text-2xl  lg:text-[44px] font-normal max-w-5xl text-center">Globbid Consulting — «Объединяя возможности и рынки»</span>
         </div>
       </div>
 
-      <div class="max-w-6xl mx-auto p-4 md:flex md:flex-wrap md:justify-center gap-6">
-        <div class="card md:w-[48%] bg-white rounded-md p-6">
-          <h2 class="text-xl font-semibold text-[#47546e] mb-4">Наша миссия</h2>
-          <p class="text-gray-600 text-justify">
+      <div class="max-w-6xl mx-auto p-2 lg:p-6 lg:flex lg:flex-wrap lg:justify-center gap-6">
+        <div class="card lg:w-[48%] bg-white p-2 lg:p-4">
+          <h2 class="text-xl font-normal lg:text-3xl mb-4">Наша миссия</h2>
+          <p class="text-[#1e1e1e] font-light text-justify">
             Мы создаем решения, которые позволяют бизнесу уверенно участвовать в
             госзакупках, минимизировать риски и добиваться устойчивого роста.
             Наша цель — стать вашим надежным партнером на пути к успеху,
@@ -211,26 +217,26 @@
         </div>
         
 
-        <div class="card md:w-[48%] bg-white  rounded-md p-6">
-          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+        <div class="card lg:w-[48%] bg-white p-2 lg:p-6">
+          <h2 class="text-xl lg:text-3xl font-normal  mb-4">
             Наша команда
           </h2>
-          <p class="text-gray-600 text-justify">
+          <p class="text-[#1e1e1e] font-light text-justify">
             Наши эксперты обладают более чем 15–20 годами опыта в таких ключевых
             отраслях, как:
           </p>
-          <ul class="list-disc list-inside text-gray-600">
+          <ul class="list-disc list-inside text-[#1e1e1e] font-light">
             <li class="text-justify">Машиностроение и горнодобывающая промышленность.</li>
             <li class="text-justify">Ретейл, дистрибуция и финансы.</li>
             <li class="text-justify">Государственные закупки и управление проектами.</li>
           </ul>
         </div>
 
-        <div class="card md:w-[48%] bg-white  rounded-md p-6">
-          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+        <div class="card lg:w-[48%] bg-white p-2 lg:p-6">
+          <h2 class="text-xl lg:text-3xl font-normal mb-4">
             Наши ценности
           </h2>
-          <ul class="text-gray-600 list-disc list-inside">
+          <ul class="text-[#1e1e1e] font-light list-disc list-inside">
             <li class="text-justify">
               Результативность: Мы ориентируемся на конкретные измеримые
               результаты, которые приносят пользу клиентам.
@@ -251,11 +257,11 @@
           </ul>
         </div>
 
-        <div class="card md:w-[48%] bg-white  rounded-md p-6">
-          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+        <div class="card lg:w-[48%] bg-white p-2 lg:p-6">
+          <h2 class="text-xl lg:text-3xl font-normal mb-4">
             Чем мы отличаемся?
           </h2>
-          <ul class="list-disc list-inside text-gray-600">
+          <ul class=" list-disc list-inside text-[#1e1e1e] font-light">
             <li class="text-justify">
               Практический опыт: многолетняя работа в реальном секторе позволяет
               предлагать проверенные и надежные решения.
@@ -271,16 +277,16 @@
           </ul>
         </div>
 
-        <div class="card md:w-[48%] bg-white rounded-md p-6 ">
-          <h2 class="text-xl font-semibold text-[#47546e] mb-4">
+        <div class="card lg:w-[48%] bg-white p-2 lg:p-6">
+          <h2 class="text-xl lg:text-3xl font-normal mb-4">
             Почему выбирают Globbid Consulting?
           </h2>
-          <p class="text-gray-600 text-justify">
+          <p class="text-[#1e1e1e] font-light text-justify">
             Мы помогаем клиентам ориентироваться в сложном мире госзакупок и
             коммерческой деятельности, упрощая сложные процессы и превращая их в
             источник роста. С Globbid Consulting вы получаете:
           </p>
-          <ul class="list-disc list-inside text-gray-600">
+          <ul class="text-[#1e1e1e] font-light list-disc list-inside">
             <li>Глубокую экспертизу.</li>
             <li>Лидерские решения.</li>
             <li class="text-justify">Партнера, который ставит ваши интересы на первое место.</li>
@@ -290,22 +296,22 @@
     </section>
 
     <section class="bg-[#323232] h-auto p-6 flex justify-center items-center">
-      <div class="flex flex-col lg:flex-row  justify-center items-center gap-2">
-        <p class="text-white text-2xl font-normal">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-2">
+        <p class="text-white text-center text-xl font-normal">
           Если вы хотите получить консультацию напишите нам и мы с Вам свяжемся
         </p>
         <button
-        class="openModalBtn bg-[#383434]  text-white font-medium px-6 py-[2px] rounded shadow box-border border-2 border-white/[0.5]"
-      >
-        Обратиться
-      </button>
+          class="openModalBtn bg-transparent text-white font-medium px-6 py-[2px] box-border border-2 border-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
+        >
+          Обратиться
+        </button>
       </div>
     </section>
     <footer class="bg-[#1e1e1e] py-10">
-      <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto px-4">
         <div class="flex flex-col items-center gap-3">
 
-          <ul class="flex space-x-6 mb-6 md:mb-0">
+          <ul class="flex space-x-6 justify-center mb-6 md:mb-0">
             <li>
               <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
                 <img src="./img/LinkedIn-3x.png" alt="LinkedIn" class="w-6" />
@@ -333,7 +339,7 @@
             </li>            
           </ul>
 
-          <ul class="flex flex-wrap space-x-6 mb-6 md:mb-0">
+          <ul class="flex flex-wrap justify-center space-x-6 mb-6 md:mb-0">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal">Site map</a>
             </li>
@@ -359,7 +365,7 @@
             </li>
           </ul>
 
-          <ul class="flex flex-wrap space-x-6">
+          <ul class="flex flex-wrap space-x-6  justify-center">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal"
                 >Responsible AI use</a
@@ -378,6 +384,7 @@
         </div>
       </div>
     </footer>
+
     <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50 transition-300">
       <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
           <form id="contact-form">

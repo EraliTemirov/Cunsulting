@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="bg-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
             <a href="#" class="flex gap-3 items-center">
@@ -48,31 +48,31 @@
           <nav class="hidden md:flex items-center space-x-6">
             <a
               href="./about.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >О нас</a
             >
             <a
               href="./solution.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Решения</a
             >
             <a
               href="./expertise.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Экспертиза</a
             >
             <a
               href="./contact.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Контакт</a
             >
 
             <div class="relative">
               <button
                 id="lang-toggle"
-                class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
+                class="transition focus:outline-none"
               >
-              Ру
+              RU
               </button>
               <ul
                 id="lang-dropdown"
@@ -82,53 +82,53 @@
                   <a
                     href="#"
                     data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Энг</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Уз</a
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                    > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
                     data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Ру</a
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                    > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-lang="ru"
+                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                    > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
                   >
                 </li>
               </ul>
             </div>
 
             <a href="#" class="text-gray-600 hover:text-gray-900 transition">
-              <img src="./img/search.png" alt="Search" class="h-6 w-6" />
+              <img src="./img/search.png" alt="Search" class="h-5 w-5" />
             </a>
           </nav>
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden">
           <nav class="space-y-4">
-            <a href="#" class="block text-gray-600 hover:text-gray-900"
+            <a href="./about.html" class="block"
               >О нас</a
             >
             <a
               href="./solution.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Решения</a
             >
             <a
               href="./expertise.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Экспертиза</a
             >
             <a
               href="./contact.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Контакт</a
             >
 
@@ -137,36 +137,36 @@
                 id="mobile-lang-toggle"
                 class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
               >
-                Язык
+                Ru
               </button>
               <ul
                 id="mobile-lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-10"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
           </nav>
@@ -184,11 +184,11 @@
         <div
           class="absolute inset-0 flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-40"
         >
-          <h1 class="text-2xl sm:text-3xl md:text-6xl font-bold mb-4">
+          <h1 class=" max-w-5xl mx-auto text-2xl sm:text-3xl md:text-6xl lg:w-2/3 font-bold mb-4">
             Делая сложное простым, мы создаем ваш успех
           </h1>
           <button
-            class="openModalBtn mt-4 bg-[#383434] text-white font-medium px-6 py-[2px] rounded shadow box-border border-2 border-white/[0.5] transition-300"
+            class="openModalBtn mt-4 bg-transparent text-white font-medium px-6 py-[2px] box-border border-2 border-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
           >
             Обратиться
           </button>
@@ -196,69 +196,66 @@
       </div>
     </section>
 
-    <section class="swiper h-[90vh]">
+    <section class="max-w-full mx-auto swiper min-h-[90vh]">
       <div class="swiper-wrapper">
         <div
-          class="swiper-slide flex flex-col lg:flex-row-reverse items-center justify-center gap-3" 
+          class="swiper-slide flex flex-col lg:flex-row-reverse items-center justify-center" 
         >
-          <div class="w-full lg:w-1/2">
+          <div class="w-full lg:w-[55%]">
             <img
               src="./img/home_hero.png"
               alt="Slide 1 Image"
               class="w-full h-auto lg:h-[70vh] object-cover"
             />
           </div>
-
-          <div class="pl-4  lg:pl-6 pl-0 lg:w-[40%]">
-            <h2 class="text-2xl font-bold mb-4 text-[#47546e] text-center">
-              Трудности заказчиков <br> 
-              <span>(Государственные организаций и крупных компаний)</span>
-            </h2>
-            <!-- <p class="text-gray-700 mb-2">
-              2. Недостаточная стабильность базы поставщиков
-            </p> -->
-            <ul class="list-disc pl-5 space-y-2">
-              <li>
-                Недостаточная стабильность базы поставщиков
-              </li>
-              <li>
-                Отсутствие инструментов для регулирования круга поставщиков и
-                проблемы с подготовкой закупочной документации.
-              </li>
-              <li>
-                Затраты ресурсов на согласование и привлечение новых участников.
-              </li>
-              <li>
-                Отсутствие инструментов и кадров для внедрения категорийного
-                менеджмента и современных методов управления.
-              </li>
-              <li>Сложность анализа предложений из-за слабой автоматизации.</li>
-              <li>
-                Низкий уровень инструментария для планирования и аналитики
-                сказывается на сотрудниках.
-              </li>
-              <li>Ручные процессы замедляют принятие решений.</li>
-            </ul>
+          <div class="pl-4  lg:pl-6 pl-0 lg:w-[45%] flex justify-end">
+            <div>
+              <h2 class="text-2xl lg:text-4xl font-normal mb-4  text-center">
+                Трудности заказчиков <br> 
+                <span class="lg:text-xl">(Государственные организаций и крупных компаний)</span>
+              </h2>
+              <ul class="list-disc pl-5 space-y-2 text-[#1e1e1e] font-normal">
+                <li>
+                  Недостаточная стабильность базы поставщиков
+                </li>
+                <li>
+                  Отсутствие инструментов для регулирования круга поставщиков и
+                  проблемы с подготовкой закупочной документации.
+                </li>
+                <li>
+                  Затраты ресурсов на согласование и привлечение новых участников.
+                </li>
+                <li>
+                  Отсутствие инструментов и кадров для внедрения категорийного
+                  менеджмента и современных методов управления.
+                </li>
+                <li>Сложность анализа предложений из-за слабой автоматизации.</li>
+                <li>
+                  Низкий уровень инструментария для планирования и аналитики
+                  сказывается на сотрудниках.
+                </li>
+                <li>Ручные процессы замедляют принятие решений.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
         <div
           class="swiper-slide flex flex-col lg:flex-row-reverse items-center gap-3 justify-center"
         >
-          <div class="w-full lg:w-1/2">
+          <div class="w-full lg:w-[55%]">
             <img
               src="./img/swiper.png"
               alt="Slide 2 Image"
               class="w-full h-auto lg:h-[70vh] object-cover"
             />
           </div>
-          <div class="p-4 lg:px-6 lg:w-[40%]">
-            <h2 class="text-2xl font-bold mb-4 text-[#47546e] text-center">
+          <div class="p-4 lg:px-6 lg:w-[45%]">
+            <h2 class="text-2xl lg:text-4xl font-normal mb-4  text-center">
               Трудности поставщиков <br>
-              <span>(участников госзакупок)</span>
+              <span class="lg:text-xl">(участников госзакупок)</span>
             </h2>
-            <!-- <p class="text-gray-700 mb-2">1. Высокий барьер для участия</p> -->
-            <ul class="list-disc pl-5 space-y-2">
+            <ul class="list-disc pl-5 space-y-2 text-[#1e1e1e] font-normal">
               <li>
                 Сложные требования к документам, которые трудно выполнить без
                 опыта участия.
@@ -268,25 +265,20 @@
                 заявок.
               </li>
             </ul>
-            <!-- <p class="text-gray-700 mb-2">2. Неэффективное планирование</p> -->
-            <ul class="list-disc pl-5 space-y-2">
+            <ul class="list-disc pl-5 space-y-2 text-[#1e1e1e] font-normal">
               <li>Отсутствие стратегии участия в тендерах.</li>
               <li>
                 Недостаточная подготовка и анализ по конкурентам при
                 формировании предложений.
               </li>
             </ul>
-            <!-- <p class="text-gray-700 mb-2">3. Риски и потери</p> -->
-            <ul class="list-disc pl-5 space-y-2">
+            <ul class="list-disc pl-5 space-y-2 text-[#1e1e1e] font-normal">
               <li>
                 Участие в тендерах без анализа рисков может привести к убыткам.
               </li>
               <li>Неправильное ценообразование уменьшает маржу.</li>
             </ul>
-            <!-- <p class="text-gray-700 mb-2">
-              4. Отсутствие долгосрочного планирования
-            </p> -->
-            <ul class="list-disc pl-5 space-y-2">
+            <ul class="list-disc pl-5 space-y-2 text-[#1e1e1e] font-normal">
               <li>
                 Упор на разовые сделки вместо выстраивания устойчивого бизнеса с
                 госзаказчиками.
@@ -303,31 +295,29 @@
       </div>
     </section>
 
-    <section class="min-h-screen flex flex-col lg:flex-row my-2 items-center">
-      <div class="w-full md:w-1/2 lg:w-1/2 relative">
+    <h2 class=" max-w-3xl mx-auto text-xl lg:text-2xl px-1 font-normal my-4">
+      Globbid Consulting — это ваш внешний штат высококвалифицированных
+      специалистов, готовый решить все перечисленные трудности как для
+      заказчиков, так и для поставщиков.
+    </h2>
+
+    <section class="w-full mx-auto  flex flex-col lg:flex-row my-1 items-center">
+      <div class="w-full mx-auto lg:w-1/2 relative">
         <img
           src="./img/image.png"
           alt="Globbid Consulting"
-          class="w-full h-auto md:h-full object-cover"
+          class="w-full h-auto lg:h-full object-cover"
           style="object-position: right"
         />
       </div>
 
-      <div class="w-full md:w-1/2 lg:w-1/2 p-6 md:p-2 lg:p-4">
+      <div class="w-full mx-auto lg:w-1/2 p-6 lg:p-2 lg:p-4">
         <div class="space-y-2">
-          <div class="bg-white  rounded-lg px-4 py-2">
-            <h2 class="text-xl font-bold text-[#47546e] mb-4">
-              Globbid Consulting — это ваш внешний штат высококвалифицированных
-              специалистов, готовый решить все перечисленные трудности как для
-              заказчиков, так и для поставщиков.
-            </h2>
-          </div>
-
-          <div class="bg-white  rounded-lg px-4 py-2">
-            <p class="text-xl font-bold text-[#47546e] mb-4">
+          <div class="bg-white  rounded-lg px-1 lg:px-4 py-2">
+            <p class="text-2xl font-normal mb-4">
               Мы помогаем заказчикам:
             </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-3">
+            <ul class="list-disc list-inside text-[#1e1e1e] font-normal space-y-3">
               <li>Внедрить прозрачные и эффективные закупочные процессы.</li>
               <li>Разработать стратегии категорийного менеджмента.</li>
               <li>
@@ -341,11 +331,11 @@
             </ul>
           </div>
 
-          <div class="bg-white  rounded-lg px-4 py-2">
-            <p class="text-xl font-bold text-[#47546e] mb-4">
+          <div class="w-full mx-auto bg-white px-1 lg:px-4 py-2">
+            <p class="text-2xl font-normal  mb-4">
               Мы помогаем поставщикам:
             </p>
-            <ul class="list-disc list-inside text-gray-700 space-y-3">
+            <ul class="list-disc list-inside text-[#1e1e1e] font-normal space-y-3">
               <li>
                 Подготовиться к тендерам, минимизировать ошибки и увеличить шансы
                 на победу.
@@ -368,21 +358,21 @@
     </section>
     <section class="bg-[#323232] h-auto p-6 flex justify-center items-center">
       <div class="flex flex-col lg:flex-row justify-center items-center gap-2">
-        <p class="text-white text-2xl font-normal">
+        <p class="text-white text-xl font-normal text-center">
           Если вы хотите получить консультацию напишите нам и мы с Вам свяжемся
         </p>
         <button
-          class="openModalBtn bg-[#383434] text-white font-medium px-6 py-[2px] rounded shadow box-border border-2 border-white/[0.5]"
+          class="openModalBtn bg-transparent text-white font-medium px-6 py-[2px] box-border border-2 border-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
         >
           Обратиться
         </button>
       </div>
     </section>
     <footer class="bg-[#1e1e1e] py-10">
-      <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto px-4">
         <div class="flex flex-col items-center gap-3">
 
-          <ul class="flex space-x-6 mb-6 md:mb-0">
+          <ul class="flex space-x-6 justify-center mb-6 md:mb-0">
             <li>
               <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
                 <img src="./img/LinkedIn-3x.png" alt="LinkedIn" class="w-6" />
@@ -410,7 +400,7 @@
             </li>            
           </ul>
 
-          <ul class="flex flex-wrap space-x-6 mb-6 md:mb-0">
+          <ul class="flex flex-wrap justify-center space-x-6 mb-6 md:mb-0">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal">Site map</a>
             </li>
@@ -436,7 +426,7 @@
             </li>
           </ul>
 
-          <ul class="flex flex-wrap space-x-6">
+          <ul class="flex flex-wrap space-x-6  justify-center">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal"
                 >Responsible AI use</a

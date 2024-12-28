@@ -14,6 +14,18 @@
    font-family: 'GillSansMTCondensed', sans-serif;
 }
 
+nav{
+   a{
+      font-size: 16px;
+      color: #1e1e1e;
+      font-weight: normal;
+
+      &:hover{
+         color: rgb(120, 35, 220);
+      }
+   }
+}
+
 @media (min-width: 768px) {
    .last-card {
      grid-column: span 2; /* 2 ta ustunni qamrab oladi */

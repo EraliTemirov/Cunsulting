@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="bg-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
             <a href="./index.html" class="flex gap-3 items-center">
@@ -26,6 +26,7 @@
                 GLOBBID CONSULTING
               </span>
             </a>
+            
           </div>
           <button
             id="menu-toggle"
@@ -37,85 +38,87 @@
           <nav class="hidden md:flex items-center space-x-6">
             <a
               href="./about.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >О нас</a
             >
-            <a href="#" class="text-gray-600 font-bold hover:text-gray-900 transition"
+            <a
+              href="#"
+              class="font-semibold transition"
               >Решения</a
             >
             <a
               href="./expertise.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Экспертиза</a
             >
             <a
               href="./contact.html"
-              class="text-gray-600 hover:text-gray-900 transition"
+              class="transition"
               >Контакт</a
             >
 
             <div class="relative">
               <button
                 id="lang-toggle"
-                class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
+                class="transition focus:outline-none"
               >
-                Язык
+              RU
               </button>
               <ul
                 id="lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-50"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
 
             <a href="#" class="text-gray-600 hover:text-gray-900 transition">
-              <img src="./img/search.png" alt="Search" class="h-6 w-6" />
+              <img src="./img/search.png" alt="Search" class="h-5 w-5" />
             </a>
           </nav>
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden">
           <nav class="space-y-4">
-            <a
-              href="./about.html"
-              class="block text-gray-600 hover:text-gray-900"
+            <a href="./about.html" class="block"
               >О нас</a
             >
-            <a href="#" class="block text-gray-600 font-bold hover:text-gray-900"
+            <a
+              href="#"
+              class="font-semibold block"
               >Решения</a
             >
             <a
               href="./expertise.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Экспертиза</a
             >
             <a
               href="./contact.html"
-              class="block text-gray-600 hover:text-gray-900"
+              class="block"
               >Контакт</a
             >
 
@@ -124,36 +127,36 @@
                 id="mobile-lang-toggle"
                 class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
               >
-                Язык
+                Ru
               </button>
               <ul
                 id="mobile-lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-10"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
           </nav>
@@ -163,10 +166,11 @@
 
     <section class="my-6">
       <div
-        class="max-w-6xl mx-auto px-10  my-12 text-start text-lg font-medium text-gray-700" 
-        style="text-align: justify; text-justify: inter-word;"
+        class="max-w-5xl mx-auto px-2 lg:px-10  my-10" 
       >
-        <span class="pl-5 text-lg">Мы понимаем, </span>что успешное участие в закупках требует разных подходов для
+      <h1 class="text-[#1e1e1e] font-bold text-[36px] md:text-[46px] lg:text-[60px]">Решения</h1>
+       <p class="w-full md:w-[70%] text-start text-xl font-light  text-[#1e1e1e]  my-5" style="text-align: justify; text-justify: inter-word;">
+        Мы понимаем, что успешное участие в закупках требует разных подходов для
         заказчиков и поставщиков. Поэтому мы разработали решения, которые
         помогут вам достичь своих целей, будь то оптимизация закупок или
         уверенная победа в тендерах. С Globbid Consulting вы получите
@@ -174,6 +178,7 @@
         поставщиков мы разработали 4 пакета услуг, чтобы удовлетворить разные
         потребности бизнеса, от первых шагов в тендерах до построения
         стратегического партнерства с государственными заказчиками.
+       </p>
       </div>
 
       <div class="flex flex-col">
@@ -185,24 +190,24 @@
           />
           <div class="w-full lg:w-1/2 px-6">
             <div class="w-full lg:w-[80%]">
-              <h3 class="text-xl font-semibold text-[#47546e] mb-4">
+              <h3 class="text-xl lg:text-2xl font-normal  mb-2">
                 1. Консультация
               </h3>
-              <p class="text-gray-600 py-2 lg:py-4">
+              <p class="text-[#1e1e1e] font-light py-2 lg:py-4">
                 Если вы только начинаете или сталкиваетесь с вопросами участия в
                 тендерах, мы готовы:
               </p>
               <ul
-                class="list-disc list-inside text-gray-600 leading-6 lg:leading-8"
+                class="list-disc list-inside text-[#1e1e1e] font-light leading-6 lg:leading-8"
               >
                 <li>Оценить вашу готовность к участию.</li>
                 <li>Провести анализ конкурентов и рынка.</li>
                 <li>Подсказать, как подготовить тендерное предложение.</li>
               </ul>
-              <p class="text-gray-600 my-2 lg:my-4">
-                <strong>Почему это важно?</strong>
+              <p class="text-xl font-normal my-2 lg:my-4">
+                Почему это важно?
               </p>
-              <p class="text-gray-600">
+              <p class="text-[#1e1e1e] font-light">
                 Консультация поможет вам понять рынок и избежать ошибок, которые
                 могут стоить вам контракта.
               </p>
@@ -217,23 +222,23 @@
             class="w-full lg:w-1/2 h-auto"
           />
           <div class="w-full lg:w-1/2 p-6 flex justify-end">
-            <div class="w-full lg:w-[80%]">
-              <h3 class="text-xl font-semibold text-[#47546e] mb-4">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-normal mb-4">
                 2. SOS (Экстренная помощь)
               </h3>
-              <p class="text-gray-600 py-2 lg:py-4">
+              <p class="text-[#1e1e1e] font-light py-2 lg:py-4">
                 Если вы уже участвуете в тендере, но столкнулись с проблемами,
                 мы предлагаем:
               </p>
               <ul
-                class="list-disc list-inside text-gray-600 leading-6 lg:leading-8"
+                class="list-disc list-inside text-[#1e1e1e] font-light leading-6 lg:leading-8"
               >
                 <li>Экспресс-оценку ситуации.</li>
                 <li>Быструю подготовку корректирующих действий.</li>
                 <li>Помощь в подаче документов.</li>
               </ul>
-              <p class="text-gray-600 my-2 lg:my-4"><strong>Пример:</strong></p>
-              <p class="text-gray-600">
+              <p class="text-xl font-normal my-2 lg:my-4">Пример:</p>
+              <p class="text-[#1e1e1e] font-light">
                 Вы обнаружили ошибку в документах на тендере. Мы исправим её,
                 пока не закончился срок подачи.
               </p>
@@ -249,24 +254,24 @@
           />
           <div class="w-full lg:w-1/2 p-6">
             <div class="w-full lg:w-[80%]">
-              <h3 class="text-xl font-semibold text-[#47546e] mb-4">
+              <h3 class="text-xl lg:text-2xl font-normal mb-4">
                 3 Тактический пакет
               </h3>
-              <p class="text-gray-600 py-2 lg:py-4">
+              <p class="text-[#1e1e1e] font-light py-2 lg:py-4">
                 Этот пакет идеально подходит, если вы хотите победить в
                 конкретном тендере:
               </p>
               <ul
-                class="list-disc list-inside text-gray-600 leading-6 lg:leading-8"
+                class="list-disc list-inside font-light text-[#1e1e1e] leading-6 lg:leading-8"
               >
                 <li>Подготовим предложение, соответствующее требованиям.</li>
                 <li>Проанализируем возможные риски и требования заказчика.</li>
                 <li>Поможем на всех этапах тендера.</li>
               </ul>
-              <p class="text-gray-600 my-2 lg:my-4">
-                <strong>Результат:</strong>
+              <p class="text-xl font-normal my-2 lg:my-4">
+                Результат:
               </p>
-              <p class="text-gray-600">
+              <p class="text-[#1e1e1e] font-light">
                 Вы повышаете свои шансы на победу, сосредотачиваясь на основном
                 бизнесе, пока мы занимаемся тендером.
               </p>
@@ -281,25 +286,25 @@
             class="w-full lg:w-1/2 h-auto"
           />
           <div class="w-full lg:w-1/2 p-6 flex justify-end">
-            <div class="w-full lg:w-[80%]">
-              <h3 class="text-xl font-semibold text-[#47546e] mb-4">
+            <div>
+              <h3 class="text-xl lg:text-2xl font-normal mb-4">
                 4 Стратегический пакет
               </h3>
-              <p class="text-gray-600 py-2 lg:py-4">
+              <p class="text-[#1e1e1e] font-light py-2 lg:py-4">
                 Для компаний, которые хотят развивать продажи через B2B, мы
                 предлагаем:
               </p>
               <ul
-                class="list-disc list-inside text-gray-600 leading-6 lg:leading-8"
+                class="list-disc list-inside text-[#1e1e1e] font-light leading-6 lg:leading-8"
               >
                 <li>Постоянное управление продажами на расстоянии.</li>
                 <li>Разработку среднесрочной стратегии.</li>
                 <li>Полное юридическое и аналитическое сопровождение.</li>
               </ul>
-              <p class="text-gray-600 my-2 lg:my-4">
-                <strong>Кто выбирает этот пакет?</strong>
+              <p class="text-xl font-normal my-2 lg:my-4">
+                Кто выбирает этот пакет?
               </p>
-              <p class="text-gray-600">
+              <p class="text-[#1e1e1e] font-light">
                 Компании, которые хотят построить долгосрочные отношения с
                 государственными заказчиками и сделать госзакупки стабильным
                 источником дохода.
@@ -312,18 +317,18 @@
     <section class="max-w-7xl m-auto my-4">
       <div class="flex flex-col lg:flex-row my-2 gap-4">
         <div class="bg-white  rounded-lg px-4 py-2 lg:w-1/2">
-            <p class="text-xl font-bold text-[#47546e] mb-4">Решения для заказчиков</p>
-            <p class="text-gray-700">Оптимизация закупочных процессов
+            <p class="text-xl lg:text-2xl font-normal mb-4">Решения для заказчиков</p>
+            <p class="text-[#1e1e1e] font-light">Оптимизация закупочных процессов
               Мы помогаем заказчикам внедрить современные подходы к управлению закупками:</p>
-            <ul class="list-disc list-inside text-gray-700 space-y-3">
+            <ul class="list-disc list-inside text-[#1e1e1e] font-light space-y-3">
               <li>Категорийный менеджмент: разделение закупок по категориям для повышения эффективности и снижения расходов.</li>
               <li>Анализ текущих процессов: выявление узких мест и подготовка плана по их устранению.</li>
               <li>Разработка стратегии закупок: создание системы, которая соответствует как вашему бюджету, так и законодательным требованиям.</li>
             </ul>
           </div>
           <div class="bg-white rounded-lg px-4 py-2 lg:w-1/2">
-            <p class="text-xl font-bold text-[#47546e] mb-4">Преимущества для заказчиков:</p>
-            <ul class="list-disc list-inside text-gray-700 space-y-3">
+            <p class="text-xl lg:text-2xl font-normal mb-4">Преимущества для заказчиков:</p>
+            <ul class="list-disc list-inside text-[#1e1e1e] font-light space-y-3">
               <li>Снижение затрат на закупки.</li>
               <li>Оптимизация процессов</li>
               <li>Повышение управленческого и операционного контроля</li>
@@ -336,17 +341,23 @@
     </section>
 
     <section class="bg-[#323232] h-auto p-6 flex justify-center items-center">
-      <div class="cta_1">
-        <p class="text-white text-2xl font-normal">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-2">
+        <p class="text-white text-xl font-normal text-center">
           Если вы хотите получить консультацию напишите нам и мы с Вам свяжемся
         </p>
+        <button
+          class="openModalBtn bg-transparent text-white font-medium px-6 py-[2px] box-border border-2 border-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
+        >
+          Обратиться
+        </button>
       </div>
     </section>
+
     <footer class="bg-[#1e1e1e] py-10">
-      <div class="container mx-auto px-4">
+      <div class="max-w-5xl mx-auto px-4">
         <div class="flex flex-col items-center gap-3">
 
-          <ul class="flex space-x-6 mb-6 lg:mb-0">
+          <ul class="flex space-x-6 justify-center mb-6 md:mb-0">
             <li>
               <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
                 <img src="./img/LinkedIn-3x.png" alt="LinkedIn" class="w-6" />
@@ -374,7 +385,7 @@
             </li>            
           </ul>
 
-          <ul class="flex flex-wrap space-x-6 mb-6 lg:mb-0">
+          <ul class="flex flex-wrap justify-center space-x-6 mb-6 md:mb-0">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal">Site map</a>
             </li>
@@ -400,7 +411,7 @@
             </li>
           </ul>
 
-          <ul class="flex flex-wrap space-x-6">
+          <ul class="flex flex-wrap space-x-6  justify-center">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal"
                 >Responsible AI use</a
@@ -419,6 +430,199 @@
         </div>
       </div>
     </footer>
+
+    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50 transition-300">
+      <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
+          <form id="contact-form">
+              <div class="mb-4">
+                  <label for="first_name" class="block text-gray-700">Имя</label>
+                  <input
+                      type="text"
+                      id="first_name"
+                      placeholder="Имя"
+                      required
+                      class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  />
+              </div>
+              <div class="mb-4">
+                  <label for="phone_number" class="block text-gray-700">Номер телефона</label>
+                  <input
+                      type="tel"
+                      id="phone_number"
+                      class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                      placeholder="+998 00 000 00 00"
+                      required
+                  />
+              </div>
+              <div class="mb-4">
+                  <label for="email" class="block text-gray-700">Электронная почта</label>
+                  <input
+                      type="email"
+                      id="email"
+                      class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                      placeholder="Введите электронную почту"
+                      required
+                  />
+              </div>
+              <div class="mb-4">
+                  <label for="message" class="block text-gray-700">Комментарий</label>
+                  <textarea
+                      id="message"
+                      placeholder="Комментарий"
+                      required
+                      class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                      rows="3"
+                  ></textarea>
+              </div>
+              <p id="error-message" class="text-red-500 text-sm mb-4"></p>
+              <div class="w-full flex justify-end">
+                  <button
+                      type="submit"
+                      class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                  >
+                  Oтправить
+                  </button>
+              </div>
+          </form>
+          <button
+              id="closeModalBtn"
+              class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-4xl"
+          >
+              &times;
+          </button>
+      </div>
+  </div>
+
+  <script>
+    // Initialize EmailJS
+    (function () {
+        emailjs.init("xK9rV3s1D9FKRJRcv");
+    })();
+
+    // Phone number formatting
+    document.getElementById('phone_number').addEventListener('input', function(e) {
+    let input = e.target.value.replace(/\D/g, '').substring(0, 12); // Faqat raqamlarni olish va 12 ta raqam bilan cheklash
+
+    // Formatlash logikasi: masalan, +998 (90) 123-45-67 shaklida
+    let formatted = '';
+
+    if (input.length > 0) {
+        formatted += '+998 ';
+    }
+    if (input.length > 3) {
+        formatted += '(' + input.substring(3, 5) + ') ';
+    }
+    if (input.length > 5) {
+        formatted += input.substring(5, 8) + '-';
+    }
+    if (input.length > 8) {
+        formatted += input.substring(8, 10) + '-';
+    }
+    if (input.length > 10) {
+        formatted += input.substring(10, 12);
+    }
+
+    e.target.value = formatted;
+});
+
+
+    // Close modal functionality
+    document.getElementById('closeModalBtn').addEventListener('click', function() {
+        document.getElementById('modal').classList.add('hidden');
+    });
+
+    // Form submission handler
+    async function sendEmail(event) {
+        event.preventDefault();
+        
+        const firstName = document.getElementById("first_name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phoneNumber = document.getElementById("phone_number").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const errorMessage = document.getElementById("error-message");
+        
+        // Basic validation
+        if (!firstName || !email || !phoneNumber || !message) {
+            errorMessage.textContent = "Все поля обязательны для заполнения.";
+            return;
+        }
+        
+        errorMessage.textContent = "";
+        
+        try {
+            const result = await emailjs.send(
+                "service_gek2z94",
+                "template_ak8qvwo",
+                {
+                    from_name: firstName,
+                    reply_to: email,
+                    message: `Имя: ${firstName}\nЭл. почта: ${email}\nНомер телефона: ${phoneNumber}\nСообщение: ${message}`,
+                }
+            );
+            
+            console.log(result);
+            
+            if (result.status === 200) {
+                alert("Сообщение успешно отправлено!");
+                document.getElementById("contact-form").reset();
+            } else {
+                throw new Error("Не удалось отправить сообщение");
+            }
+        } catch (error) {
+            console.error("Ошибка:", error);
+            alert("Не удалось отправить сообщение. Пожалуйста, попробуйте позже.");
+        }
+    }
+
+    // Add form submission event listener
+    document.getElementById('contact-form').addEventListener('submit', sendEmail);
+</script>
+
     <script src="./js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".swiper", {
+          direction: "horizontal",
+          loop: true,
+          cssMode: true, // Use browser-native scrolling
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+      });
+    </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const openModalBtns = document.getElementsByClassName("openModalBtn");
+  const closeModalBtn = document.getElementById("closeModalBtn");
+  const modal = document.getElementById("modal");
+
+  // Add click event to all open modal buttons
+  Array.from(openModalBtns).forEach(btn => {
+    btn.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+  });
+
+  // Close modal when close button is clicked
+  closeModalBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+
+  // Close modal when clicking outside of it
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.classList.add("hidden");
+    }
+  });
+});
+    </script>
   </body>
 </html>

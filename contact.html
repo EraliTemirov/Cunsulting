@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="bg-white shadow-md sticky top-0 z-50">
-      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
           <div class="flex items-center">
             <a href="./index.html" class="flex gap-3 items-center">
@@ -36,131 +36,101 @@
             &#9776;
           </button>
           <nav class="hidden md:flex items-center space-x-6">
-            <a
-              href="./about.html"
-              class="text-gray-600 hover:text-gray-900 transition"
-              >О нас</a
-            >
-            <a
-              href="./solution.html"
-              class="text-gray-600 hover:text-gray-900 transition"
-              >Решения</a
-            >
-            <a
-              href="./expertise.html"
-              class="text-gray-600 hover:text-gray-900 transition"
-              >Экспертиза</a
-            >
-            <a href="#" class="text-gray-600 font-bold hover:text-gray-900 transition"
-              >Контакт</a
-            >
+            <a href="./about.html" class="transition">О нас</a>
+            <a href="./solution.html" class="transition">Решения</a>
+            <a href="./expertise.html" class="transition">Экспертиза</a>
+            <a href="#" class="font-semibold transition">Контакт</a>
 
             <div class="relative">
-              <button
-                id="lang-toggle"
-                class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
-              >
-                Язык
+              <button id="lang-toggle" class="transition focus:outline-none">
+                RU
               </button>
               <ul
                 id="lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-50"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
 
             <a href="#" class="text-gray-600 hover:text-gray-900 transition">
-              <img src="./img/search.png" alt="Search" class="h-6 w-6" />
+              <img src="./img/search.png" alt="Search" class="h-5 w-5" />
             </a>
           </nav>
         </div>
 
         <div id="mobile-menu" class="hidden md:hidden">
           <nav class="space-y-4">
-            <a
-              href="./about.html"
-              class="block text-gray-600 hover:text-gray-900"
-              >О нас</a
-            >
-            <a
-              href="./solution.html"
-              class="block text-gray-600 hover:text-gray-900"
-              >Решения</a
-            >
-            <a
-              href="./expertise.html"
-              class="block text-gray-600 hover:text-gray-900"
-              >Экспертиза</a
-            >
-            <a href="#" class="block text-gray-600 font-bold hover:text-gray-900"
-              >Контакт</a
-            >
+            <a href="./about.html" class="block">О нас</a>
+            <a href="./solution.html" class="block">Решения</a>
+            <a href="./expertise.html" class="block">Экспертиза</a>
+            <a href="#" class="font-semibold block">Контакт</a>
 
             <div class="relative">
               <button
                 id="mobile-lang-toggle"
                 class="text-gray-600 hover:text-gray-900 transition focus:outline-none"
               >
-                Язык
+                Ru
               </button>
               <ul
                 id="mobile-lang-dropdown"
                 class="hidden absolute bg-white border rounded shadow-md mt-2 w-28 z-10"
               >
-                <li>
-                  <a
-                    href="#"
-                    data-lang="en"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >English</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="ru"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >Русский</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-lang="uz"
-                    class="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                    >O'zbek</a
-                  >
-                </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="en"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/eng.png" alt="flag" class="w-5"></div> ENG</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="uz"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/uz.png" alt="flag" class="w-5"></div> O'z</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-lang="ru"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 flex justify-start items-center gap-2"
+                  > <div><img src="./img/ru.png" alt="flag" class="w-5"></div>RU</a
+                >
+              </li>
               </ul>
             </div>
           </nav>
         </div>
       </div>
     </header>
+
 
     <section class="my-4">
       <div class="flex flex-col space-y-1">
@@ -172,13 +142,13 @@
             <div class=" lg:w-1/2 space-y-6 px-6">
               <div class="flex gap-4 justify-start space-y-4">
                 <div class="space-y-2 w-1/2">
-                  <h3 class="text-xl font-semibold text-[#47546e]">АДРЕС</h3>
+                  <h3 class="text-xl font-normal text-[#1e1e1e]">АДРЕС</h3>
                   <p class="text-gray-600">
                     Узбекистан, Ташкент проспект Мустақиллик
                   </p>
                 </div>
                 <div class="space-y-2 w-1/2">
-                  <h3 class="text-xl font-semibold text-[#47546e]">
+                  <h3 class="text-xl font-normal text-[#1e1e1e]">
                     РАБОЧЕЕ ВРЕМЯ
                   </h3>
                   <p class="text-gray-600">ПН – ПТ с 9:00 – 18:00</p>
@@ -186,26 +156,26 @@
               </div>
               <div class="flex gap-3 justify-start">
                 <div class="space-y-2 w-1/2">
-                  <h3 class="text-xl font-semibold text-[#47546e]">ТЕЛЕФОНЫ</h3>
+                  <h3 class="text-xl font-normal text-[#1e1e1e]">ТЕЛЕФОНЫ</h3>
                   <p><a href="tel:+998998731333" class="text-gray-600">+ 998 99 873 13 33</a></p>
                   <p><a href="tel:+998333330033" class="text-gray-600">+ 998 33 333 00 33</a></p>
                   <p><a href="tel:+998950880818" class="text-gray-600">+ 998 95 088 08 18</a></p>
                 </div>
                 <div class="space-y-2 w-1/2">
-                  <h3 class="text-xl font-semibold text-[#47546e]">E-MAIL</h3>
+                  <h3 class="text-xl font-normal text-[#1e1e1e]">E-MAIL</h3>
                   <p class="text-gray-600">info@globbid.com</p>
                 </div>
               </div>
               <div class="flex gap-3 justify-between">
 
                 <div class="space-y-2 w-1/2">
-                  <h3 class="text-xl font-semibold text-[#47546e]">TELEGRAM</h3>
+                  <h3 class="text-xl font-normal text-[#1e1e1e]">TELEGRAM</h3>
                   <p class="text-gray-600">@Globbid</p>
                 </div>
                 <div class="space-y-2 w-1/2">
-                  <h3 class="text-xl font-semibold text-[#47546e]">LINKEDIN</h3>
+                  <h3 class="text-xl font-normal text-[#1e1e1e]">Linkedin</h3>
                   <p class="text-gray-600"> <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
-                    Globbid Consulting
+                    linkedin.com
                   </a></p>
                 </div>
               </div>
@@ -216,45 +186,70 @@
     </section>
 
     <section class="bg-[#323232] h-auto p-6 flex justify-center items-center">
-      <div class="cta_1">
-        <p class="text-white text-2xl font-normal">
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-2">
+        <p class="text-white text-xl font-normal text-center">
           Если вы хотите получить консультацию напишите нам и мы с Вам свяжемся
         </p>
+        <button
+          class="openModalBtn bg-transparent text-white font-medium px-6 py-[2px] box-border border-2 border-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black"
+        >
+          Обратиться
+        </button>
       </div>
     </section>
-    <footer class="bg-[#1e1e1e] py-10">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col items-center gap-3">
 
-          <ul class="flex space-x-6 mb-6 md:mb-0">
+    <footer class="bg-[#1e1e1e] py-10">
+      <div class="max-w-5xl mx-auto px-4">
+        <div class="flex flex-col items-center gap-3">
+          <ul class="flex space-x-6 justify-center mb-6 md:mb-0">
             <li>
-              <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/globbid-consulting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="./img/LinkedIn-3x.png" alt="LinkedIn" class="w-6" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/globbid-consulting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="./img/Facebook-3x.png" alt="LinkedIn" class="w-6" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/globbid-consulting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="./img/Instagram-3x.png" alt="LinkedIn" class="w-6" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/globbid-consulting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="./img/X-3x.png" alt="LinkedIn" class="w-6" />
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/globbid-consulting" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/company/globbid-consulting"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="./img/YouTube-3x.png" alt="LinkedIn" class="w-6" />
               </a>
-            </li>            
+            </li>
           </ul>
 
-          <ul class="flex flex-wrap space-x-6 mb-6 md:mb-0">
+          <ul class="flex flex-wrap justify-center space-x-6 mb-6 md:mb-0">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal">Site map</a>
             </li>
@@ -280,7 +275,7 @@
             </li>
           </ul>
 
-          <ul class="flex flex-wrap space-x-6">
+          <ul class="flex flex-wrap space-x-6 justify-center">
             <li>
               <a href="#" class="text-gray-400 text-xs font-normal"
                 >Responsible AI use</a
@@ -299,6 +294,215 @@
         </div>
       </div>
     </footer>
+
+    <div
+      id="modal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50 transition-300"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-lg w-96 relative">
+        <form id="contact-form">
+          <div class="mb-4">
+            <label for="first_name" class="block text-gray-700">Имя</label>
+            <input
+              type="text"
+              id="first_name"
+              placeholder="Имя"
+              required
+              class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="phone_number" class="block text-gray-700"
+              >Номер телефона</label
+            >
+            <input
+              type="tel"
+              id="phone_number"
+              class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="+998 00 000 00 00"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700"
+              >Электронная почта</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              placeholder="Введите электронную почту"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-700">Комментарий</label>
+            <textarea
+              id="message"
+              placeholder="Комментарий"
+              required
+              class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+              rows="3"
+            ></textarea>
+          </div>
+          <p id="error-message" class="text-red-500 text-sm mb-4"></p>
+          <div class="w-full flex justify-end">
+            <button
+              type="submit"
+              class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+            >
+              Oтправить
+            </button>
+          </div>
+        </form>
+        <button
+          id="closeModalBtn"
+          class="absolute top-2 right-2 text-gray-600 hover:text-gray-900 text-4xl"
+        >
+          &times;
+        </button>
+      </div>
+    </div>
+
+    <script>
+      // Initialize EmailJS
+      (function () {
+        emailjs.init("xK9rV3s1D9FKRJRcv");
+      })();
+
+      // Phone number formatting
+      document
+        .getElementById("phone_number")
+        .addEventListener("input", function (e) {
+          let input = e.target.value.replace(/\D/g, "").substring(0, 12); // Faqat raqamlarni olish va 12 ta raqam bilan cheklash
+
+          // Formatlash logikasi: masalan, +998 (90) 123-45-67 shaklida
+          let formatted = "";
+
+          if (input.length > 0) {
+            formatted += "+998 ";
+          }
+          if (input.length > 3) {
+            formatted += "(" + input.substring(3, 5) + ") ";
+          }
+          if (input.length > 5) {
+            formatted += input.substring(5, 8) + "-";
+          }
+          if (input.length > 8) {
+            formatted += input.substring(8, 10) + "-";
+          }
+          if (input.length > 10) {
+            formatted += input.substring(10, 12);
+          }
+
+          e.target.value = formatted;
+        });
+
+      // Close modal functionality
+      document
+        .getElementById("closeModalBtn")
+        .addEventListener("click", function () {
+          document.getElementById("modal").classList.add("hidden");
+        });
+
+      // Form submission handler
+      async function sendEmail(event) {
+        event.preventDefault();
+
+        const firstName = document.getElementById("first_name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const phoneNumber = document
+          .getElementById("phone_number")
+          .value.trim();
+        const message = document.getElementById("message").value.trim();
+        const errorMessage = document.getElementById("error-message");
+
+        // Basic validation
+        if (!firstName || !email || !phoneNumber || !message) {
+          errorMessage.textContent = "Все поля обязательны для заполнения.";
+          return;
+        }
+
+        errorMessage.textContent = "";
+
+        try {
+          const result = await emailjs.send(
+            "service_gek2z94",
+            "template_ak8qvwo",
+            {
+              from_name: firstName,
+              reply_to: email,
+              message: `Имя: ${firstName}\nЭл. почта: ${email}\nНомер телефона: ${phoneNumber}\nСообщение: ${message}`,
+            }
+          );
+
+          console.log(result);
+
+          if (result.status === 200) {
+            alert("Сообщение успешно отправлено!");
+            document.getElementById("contact-form").reset();
+          } else {
+            throw new Error("Не удалось отправить сообщение");
+          }
+        } catch (error) {
+          console.error("Ошибка:", error);
+          alert(
+            "Не удалось отправить сообщение. Пожалуйста, попробуйте позже."
+          );
+        }
+      }
+
+      // Add form submission event listener
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", sendEmail);
+    </script>
+
     <script src="./js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const swiper = new Swiper(".swiper", {
+          direction: "horizontal",
+          loop: true,
+          cssMode: true, // Use browser-native scrolling
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const openModalBtns = document.getElementsByClassName("openModalBtn");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+        const modal = document.getElementById("modal");
+
+        // Add click event to all open modal buttons
+        Array.from(openModalBtns).forEach((btn) => {
+          btn.addEventListener("click", () => {
+            modal.classList.remove("hidden");
+          });
+        });
+
+        // Close modal when close button is clicked
+        closeModalBtn.addEventListener("click", () => {
+          modal.classList.add("hidden");
+        });
+
+        // Close modal when clicking outside of it
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) {
+            modal.classList.add("hidden");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

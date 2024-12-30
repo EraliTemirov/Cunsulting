@@ -12,6 +12,8 @@
       content="Госзакупки оптимизация, Услуги B2G, Участие в тендерах, Консалтинговые услуги для госзакупок, Анализ тендерных предложений, Оптимизация закупочных процедур"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   </head>
   <body>
     <header class="bg-white shadow-md sticky top-0 z-50">
@@ -41,7 +43,7 @@
             <a href="./contact.html" class="transition">Контакт</a>
 
             <div class="relative">
-              <button id="lang-toggle" class="transition focus:outline-none">
+              <button id="lang-toggle" class="transition focus:outline-none" style="font-size: 16px;">
                 RU
               </button>
               <ul
@@ -322,101 +324,43 @@
 
     <footer class="bg-[#1e1e1e] py-10">
       <div class="max-w-5xl mx-auto px-4">
-        <div class="flex flex-col items-center gap-3">
-          <ul class="flex space-x-6 justify-center mb-6 md:mb-0">
+        <div class="flex  justify-center gap-3">
+          <ul class="flex justify-center gap-4 ">
             <li>
-              <a
-                href="https://www.linkedin.com/company/globbid-consulting"
-                target="_blank"
+              <a 
+                href="https://www.linkedin.com/company/globbid-consulting" 
+                target="_blank" 
                 rel="noopener noreferrer"
               >
-                <img src="./img/LinkedIn-3x.png" alt="LinkedIn" class="w-6" />
+              <i class="fa fa-linkedin-square" style="font-size:38px; color:wheat"></i>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/company/globbid-consulting"
-                target="_blank"
+              <a 
+                href="mailto:info@globbid.com" 
+                target="_blank" 
                 rel="noopener noreferrer"
               >
-                <img src="./img/Facebook-3x.png" alt="LinkedIn" class="w-6" />
+              <i class="fa fa-envelope" style="font-size:36px; color:wheat"></i>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.linkedin.com/company/globbid-consulting"
-                target="_blank"
+              <a 
+                href="https://t.me/Globbid" 
+                target="_blank" 
                 rel="noopener noreferrer"
               >
-                <img src="./img/Instagram-3x.png" alt="LinkedIn" class="w-6" />
+              <i class="fa fa-telegram" style="font-size:36px; color:wheat"></i>
               </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/globbid-consulting"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./img/X-3x.png" alt="LinkedIn" class="w-6" />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/company/globbid-consulting"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="./img/YouTube-3x.png" alt="LinkedIn" class="w-6" />
-              </a>
-            </li>
-          </ul>
-
-          <ul class="flex flex-wrap justify-center space-x-6 mb-6 md:mb-0">
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal">Site map</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal"
-                >Privacy policy</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal"
-                >Legal disclaimer</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal"
-                >Client confidentiality</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal"
-                >Cookie notice</a
-              >
-            </li>
-          </ul>
-
-          <ul class="flex flex-wrap space-x-6 justify-center">
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal"
-                >Responsible AI use</a
-              >
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 text-xs font-normal"
-                >Do not sell or share my personal information</a
-              >
             </li>
           </ul>
         </div>
 
         <div class="text-center mt-6">
-          <span class="text-gray-400 text-lg">GLOBBID CONSULTING</span>
+          <span class="text-gray-400 text-lg uppercase">Copyrighted by Globbid consulting</span>
         </div>
       </div>
     </footer>
-
     <div
       id="modal"
       class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50 transition-300"
